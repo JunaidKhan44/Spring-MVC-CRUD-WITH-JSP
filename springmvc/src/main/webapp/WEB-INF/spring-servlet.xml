@@ -100,7 +100,7 @@
         <!-- <property name="url" value="jdbc:mysql://localhost:3306/springmvc?createDatabaseIfNotExist=true"/> -->
         
         <property name="username" value="root"/>
-        <property name="password" value="blia@var2"/>
+        <property name="password" value="******"/>
     </bean>
 	
      <!-- set transaction Manager -->
