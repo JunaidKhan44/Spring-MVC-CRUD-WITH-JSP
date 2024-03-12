@@ -17,6 +17,7 @@ import net.bytebuddy.dynamic.loading.ClassReloadingStrategy.Strategy;
  * @author Junaid Khan
  *
  */
+
 @Entity
 public class Product {
 	
