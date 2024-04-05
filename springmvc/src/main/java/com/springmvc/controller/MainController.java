@@ -74,8 +74,6 @@ public class MainController {
 	
 	@RequestMapping(value = "/update/{productId}")
 	public String updateHandler(@PathVariable("productId") int productId,Model m) {
-
-		//productDao.deleteProduct(productId);
 		Product product=this.productDao.getSingleProduct(productId);
 		m.addAttribute("product",product);
 		return "update-form";
