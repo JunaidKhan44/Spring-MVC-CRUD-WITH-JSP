@@ -25,14 +25,14 @@ public class ProductDao {
 	private HibernateTemplate  hibernateTemplate;
 	
 	
-	//create
+	
 	@Transactional
 	public void createProduct(Product product) {
 		
 		this.hibernateTemplate.saveOrUpdate(product);
 	}
 	
-	//getall
+	
 	public List<Product> getAllProduct(){
 		
 		 List<Product> lst =this.hibernateTemplate.loadAll(Product.class);
@@ -41,7 +41,7 @@ public class ProductDao {
 	}
 	
 	
-	//delete single record
+	
 	@Transactional
 	public void deleteProduct(int pid) {
 		
@@ -49,7 +49,7 @@ public class ProductDao {
 		this.hibernateTemplate.delete(product);
 	}
 	
-	// load single record
+	
 	public Product getSingleProduct(int pid) {
 
 		return this.hibernateTemplate.get(Product.class, pid);
